@@ -21,10 +21,10 @@
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src="./images/WeAid2.png" width="30" height="30" alt="" loading="lazy" />
       </a>
-      <a class="navbar-brand" href="#">WeAid</a>
+      <a class="navbar-brand" href="index.html">WeAid</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -43,39 +43,58 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            <a class="nav-link" href="community.html">Community</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="#">About Us</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <button class="btn btn-primary" type="GET">Login</button>
+          <button class="btn btn-primary" type="GET">Register</button>
         </form>
       </div>
     </nav>
     <!-- Header -->
     <!--<img src="..." class="img-fluid" alt="Responsive image" />-->
+
+    <div class="card bg-dark text-white">
+      <img class="card-img" src="./images/sthetoscope.jpg" alt="Card image" />
+      <div class="card-img-overlay">
+        <h5 class="card-title">Welcome to WeAid</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget tristique nunc, et scelerisque enim. Integer laoreet euismod aliquet.
+          Fusce tristique orci vel mi eleifend auctor.
+        </p>
+        <button class="btn btn-primary" type="submit">Login</button>
+        <button class="btn btn-primary" type="submit">Register</button>
+      </div>
+    </div>
+
+    <div class="Howto">
+      <h1>How to Create an Account</h1>
+      <div class="card-deck" style="margin: 10px">
+        <div class="card" style="width: 18rem">
+          <img class="card-img-top" src="./images/add.svg" alt="Add" />
+          <div class="card-body">
+            <p class="card-text">Click the Register Button</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img class="card-img-top" src="./images/edit.svg" alt="Edit" />
+          <div class="card-body">
+            <p class="card-text">Fill up with Complete Details</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img class="card-img-top" src="./images/verify.svg" alt="Verify" />
+          <div class="card-body">
+            <p class="card-text">Click the Register Button and you're done!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="header">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -85,7 +104,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" id="carousel" src="./images/consultation-img.jpg" alt="First slide" />
+            <img class="d-block w-100" src="./images/consultation-img.jpg" alt="First slide" />
             <div class="carousel-caption d-none d-md-block">
               <h5>Medicine</h5>
               <p>We are here to assist you in your Maintenance Medicine</p>
@@ -102,7 +121,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" id="carousel" src="./images/doctor1.jpg" alt="Second slide" />
+            <img class="d-block w-100" src="./images/doctor1.jpg" alt="Second slide" />
             <div class="carousel-caption d-none d-md-block">
               <h5>Assistance</h5>
               <p>Always Customer First</p>
@@ -119,7 +138,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" id="carousel" src="./images/doctor2.jpg" alt="Third slide" />
+            <img class="d-block w-100" src="./images/doctor2.jpg" alt="Third slide" />
             <div class="carousel-caption d-none d-md-block">
               <h5>Doctors is in</h5>
               <p>There are several Licensed Doctors in our team</p>
@@ -144,6 +163,31 @@
       </div>
     </div>
 
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark pt-4">
+      <!-- Footer Elements -->
+      <div class="container">
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+          <li class="list-inline-item">
+            <h5 class="mb-1">Register for free</h5>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="btn btn-primary">Sign up!</a>
+          </li>
+        </ul>
+        <!-- Call to action -->
+      </div>
+      <!-- Footer Elements -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright:
+        <a href="https://mikealmonte13.github.io/WeAid">WeAid</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -161,5 +205,14 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <!-- 
+Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> 
+
+Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
+Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
+
+-->
   </body>
 </html>

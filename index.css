@@ -10,10 +10,47 @@ img.home-logo {
 body {
   font-family: "Ubuntu", sans-serif;
 }
-#carousel {
+.d-block {
   filter: brightness(50%);
-  width: 100% !important;
-  height: 100vh !important;
-  
 }
-
+.container {
+  max-height: 250px;
+  max-width: auto;
+}
+.content-1 {
+  max-height: 250px;
+  max-width: auto;
+  border: solid, 1px, #348acf;
+}
+div.Howto {
+  margin: 10px;
+  padding: 10px;
+}
+.footer.copyright {
+  background-color: #3891d9;
+  color: black;
+}
+.card-deck {
+  border-radius: 5px;
+  padding: 10px;
+}
+.card-img {
+  filter: brightness(50%);
+  filter: blur(50%);
+}
+.card-img-overlay {
+  max-width: 50%;
+  top: 100px;
+  left: 10px;
+  max-height: 50%;
+  height: fit-content;
+  width: fit-content;
+  backdrop-filter: blur(10px);
+}
+@media only screen and (max-width: 728px) {
+  .card-img-overlay {
+    top: 0;
+    left: 10;
+    font-size: 15px;
+  }
+}
