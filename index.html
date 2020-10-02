@@ -1,46 +1,29 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <!-- CSS Stylesheet and Custom Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" />
+    <link rel="stylesheet" href="./scss/styles.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="index.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>WeAid</title>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="index.html">
-        <img src="./images/WeAid2.png" width="30" height="30" alt="" loading="lazy" />
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary position-fixed w-100">
+      <a href="index.html" class="navbar-brand">
+        <img src="./images/WeAid2.png" width="30" height="30" alt="WeAid.png" />
       </a>
-      <a class="navbar-brand" href="index.html">WeAid</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+
+      <button class="navbar-toggler" data-target=".navbar-collapse" data-toggle="collapse">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="community.html">Community</a>
@@ -49,44 +32,134 @@
             <a class="nav-link" href="#">About Us</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <button class="btn btn-primary" type="GET">Login</button>
-          <button class="btn btn-primary" type="GET">Register</button>
-        </form>
+        <button type="submit" name="commit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#login">Login</button>
+        <button type="submit" name="commit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#signup">Register</button>
+        <div class="modal fade" id="login" role="dialog">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Login</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">
+                      <i class="fa fa-envelope"></i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" />
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">
+                      <i class="fa fa-lock"></i>
+                    </span>
+                  </div>
+                  <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" />
+                </div>
+                <button type="submit" name="commit" class="btn btn-primary btn-lg btn-block">
+                  <span>Login <i class="fa fa-sign-in"></i></span>
+                </button>
+                <div class="text-center">
+                  <a class="" href="" data-dismiss="modal" data-toggle="modal" data-target="#signup">Signup</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="signup" role="dialog">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Signup</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">
+                      <i class="fa fa-user"></i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1" />
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">
+                      <i class="fa fa-envelope"></i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" />
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">
+                      <i class="fa fa-lock"></i>
+                    </span>
+                  </div>
+                  <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" />
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">
+                      <i class="fa fa-lock"></i>
+                    </span>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Password confirmation"
+                    aria-label="Password confirmation"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <button type="submit" name="commit" class="btn btn-primary btn-lg btn-block">
+                  <span>Signup <i class="fa fa-sign-in"></i></span>
+                </button>
+                <div class="text-center">
+                  <a class="" href="" data-dismiss="modal" data-toggle="modal" data-target="#login">Login</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
     <!-- Header -->
-    <!--<img src="..." class="img-fluid" alt="Responsive image" />-->
 
-    <div class="card bg-dark text-white">
-      <img class="card-img" src="./images/sthetoscope.jpg" alt="Card image" />
-      <div class="card-img-overlay">
-        <h5 class="card-title">Welcome to WeAid</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget tristique nunc, et scelerisque enim. Integer laoreet euismod aliquet.
-          Fusce tristique orci vel mi eleifend auctor.
-        </p>
-        <button class="btn btn-primary" type="submit">Login</button>
-        <button class="btn btn-primary" type="submit">Register</button>
+    <section id="home">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 mx-auto">
+            <h1 class="text-white">Welcome to WeAid</h1>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ipsum impedit! Quae perferendis numquam voluptates repellat
+              obcaecati, vitae ea corrupti. Quos natus quo alias voluptatibus.
+            </p>
+            <button type="submit" name="commit" class="btn btn-primary btn-lg mr-3" data-toggle="modal" data-target="#login">Login</button>
+            <button type="submit" name="commit" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#signup">Register</button>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
     <div class="Howto">
       <h1>How to Create an Account</h1>
       <div class="card-deck" style="margin: 10px">
-        <div class="card" style="width: 18rem">
+        <div class="card border-0" style="width: 18rem">
           <img class="card-img-top" src="./images/add.svg" alt="Add" />
           <div class="card-body">
             <p class="card-text">Click the Register Button</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card border-0" style="width: 18rem">
           <img class="card-img-top" src="./images/edit.svg" alt="Edit" />
           <div class="card-body">
             <p class="card-text">Fill up with Complete Details</p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card border-0" style="width: 18rem">
           <img class="card-img-top" src="./images/verify.svg" alt="Verify" />
           <div class="card-body">
             <p class="card-text">Click the Register Button and you're done!</p>
@@ -173,7 +246,7 @@
             <h5 class="mb-1">Register for free</h5>
           </li>
           <li class="list-inline-item">
-            <a href="#!" class="btn btn-primary">Sign up!</a>
+            <button type="submit" name="commit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#signup">Register Here!</button>
           </li>
         </ul>
         <!-- Call to action -->
