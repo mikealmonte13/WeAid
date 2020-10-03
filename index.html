@@ -57,7 +57,7 @@
       </div>
     </section>
 
-    <div class="Howto" data-aos="fade-up">
+    <div class="Howto">
       <h1>How to Create an Account</h1>
       <div class="card-deck" style="margin: 10px">
         <div class="card border-0" style="width: 18rem" data-aos="fade-up">
@@ -66,13 +66,13 @@
             <p class="card-text">Click the Register Button</p>
           </div>
         </div>
-        <div class="card border-0" style="width: 18rem" data-aos="fade-up">
+        <div class="card border-0" style="width: 18rem" data-aos="fade-up" data-aos-delay="500">
           <img class="card-img-top" src="./images/edit.svg" alt="Edit" />
           <div class="card-body">
             <p class="card-text">Fill up with Complete Details</p>
           </div>
         </div>
-        <div class="card border-0" style="width: 18rem" data-aos="fade-up">
+        <div class="card border-0" style="width: 18rem" data-aos="fade-up" data-aos-delay="1000">
           <img class="card-img-top" src="./images/verify.svg" alt="Verify" />
           <div class="card-body">
             <p class="card-text">Click the Register Button and you're done!</p>
@@ -273,7 +273,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        duration: 500,
+      });
     </script>
     <!-- 
 Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> 
